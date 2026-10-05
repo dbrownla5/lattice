@@ -37,7 +37,7 @@ def git(*args: str, timeout: int = 30) -> str:
     import subprocess
     try:
         r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, timeout=timeout)
-        return f"ok" if r.returncode == 0 else f"failed({r.returncode}): {(r.stderr or r.stdout).strip()[:200]}"
+        return "ok" if r.returncode == 0 else f"failed({r.returncode}): {(r.stderr or r.stdout).strip()[:200]}"
     except Exception as e:
         return f"failed: {e}"
 

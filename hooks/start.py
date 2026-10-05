@@ -8,7 +8,8 @@ import sys
 
 from common import LATTICE, SESSIONS_INDEX, git, log
 
-pulled = git("pull", "--rebase", "--autostash", timeout=20)  # pick up what other devices added
+# Always sync against main: cloud sessions start on their own branch with no upstream.
+pulled = git("pull", "--rebase", "--autostash", "origin", "main", timeout=20)
 
 MAX_CHARS = 60_000  # newest material wins if the lattice grows past this
 

@@ -27,6 +27,11 @@ else:
 append(SESSIONS_INDEX, f"- {stamp}  session {session[:8]}  ended: {event.get('reason', '?')}  transcript: {saved}\n")
 git("add", "-A")
 committed = git("commit", "-m", f"session {session[:8]} ({stamp})")
-synced = git("pull", "--rebase", "--autostash") if committed == "ok" else "skipped"
-pushed = git("push", timeout=60) if committed == "ok" else "skipped"
+synced = git("pull", "--rebase", "--autostash", "origin", "main") if committed == "ok" else "skipped"
+pushed = "skipped"
+if committed == "ok":
+    pushed = git("push", "origin", "HEAD:main", timeout=60)
+    if pushed != "ok":
+        # Some cloud sessions may only push to their own branch; keep the work rather than lose it.
+        pushed = "main " + pushed + " | branch " + git("push", "-u", "origin", "HEAD", timeout=60)
 log(f"END    session={session} reason={event.get('reason', '?')} saved={saved} commit={committed} push={pushed}")

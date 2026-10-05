@@ -1,0 +1,41 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && (python3 hooks/start.py || python hooks/start.py)",
+            "shell": "bash",
+            "timeout": 45
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && (python3 hooks/end.py || python hooks/end.py)",
+            "shell": "bash",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python hooks/add.py *)",
+      "Bash(python3 hooks/add.py *)",
+      "PowerShell(python hooks/add.py *)"
+    ],
+    "deny": [
+      "Edit(memory/**)",
+      "Edit(hooks/**)",
+      "Edit(transcripts/**)",
+      "Edit(.claude/**)"
+    ]
+  }
+}

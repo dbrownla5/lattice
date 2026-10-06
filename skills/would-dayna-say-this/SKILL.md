@@ -26,6 +26,8 @@ Show numbered lines, each with Y / N:
 Dayna answers in one message, like "1Y 2N 3Y". For each N, offer one alternative, not a menu. Every Y moves into the "Approved" list at the top of the working file and is never rewritten again unless Dayna asks.
 
 ## Working rules
+- Answer from Dayna's documents first. Dayna's own file labels ("use for contributions and data points", "pull from – dont use as is") are authority. Dates answer questions too.
+- Only ask what the documents can't answer, and always put a best read in front of Dayna to correct (yes, or what it really was). Never an open question Dayna has to explain from scratch.
 - There is one working file per document. Edit lines in place and show only the changed lines.
 - Carry every approved line forward exactly. Urgency is never a reason to start over.
 - Before drafting, read: career/critic-brief.md, career/feedback-log.md, memory/lattice.md, and Dayna's raw writing (career/doc7-raw-only.txt).

@@ -27,7 +27,7 @@ python3 hooks/review.py --live   # this session so far
 - The LLM reviewer and the rule skills (adapt, would-dayna-say-this) were removed on 2026-10-06: the reviewer contradicted Dayna and the rules piled up and fought each other.
 - SessionEnd: `end.py` does a final save and publish.
 - Everything in memory/, skills/, career/ and transcripts/ goes to main as soon as it changes.
-- hooks/hook.log (not committed) has one line per hook run; the reviewer's own output is in .git/lattice/reviewer.out.
+- hooks/hook.log (not committed) has one line per hook run.
 
 ## Gotchas
 - Cloud sessions start on their own branch. Everything syncs through main, by merge and never rebase. memory/lattice.md, memory/sessions.md and career/feedback-log.md union-merge (.gitattributes), so parallel appends don't conflict. Before that, they did, and sessions split apart.

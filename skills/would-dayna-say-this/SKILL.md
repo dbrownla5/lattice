@@ -8,7 +8,7 @@ description: Line-by-line yes/no check for anything written for or as Dayna (res
 Every line written for Dayna passes all eight checks before Dayna sees it. One "no" means fix it first.
 
 ## The eight checks (Claude runs these, silently, on every line)
-1. **Would Dayna say this?** It's Dayna's idea, in Dayna's current (2026) way of saying things, not last year's resume voice and not generic AI phrasing.
+1. **Would Dayna say this?** Does it leave the read in career/calibration-who-i-am.md (Dayna's approved calibration)? It's Dayna's idea, in Dayna's current (2026) way of saying things, not last year's resume voice and not generic AI phrasing.
 2. **Could Dayna speak to it in an interview?** Every fact traces to something Dayna said or confirmed (career/critic-brief.md). No invented numbers or claims.
 3. **Executive level?** It doesn't read like a store manager or district manager.
 4. **Specific?** Dayna's specifics are kept, not flattened into categories.
@@ -31,4 +31,4 @@ Dayna answers in one message, like "1Y 2N 3Y". For each N, offer one alternative
 - There is one working file per document. Edit lines in place and show only the changed lines.
 - Carry every approved line forward exactly. Urgency is never a reason to start over.
 - Use the voice tools in the session before showing Dayna anything: check lines against Dayna's Idiolect writing profile (it holds the 2026 voice preference). It's a check on Claude's refinement, never a writer that replaces Dayna's words.
-- Before drafting, read: career/critic-brief.md, career/feedback-log.md, memory/lattice.md, and Dayna's raw writing (career/doc7-raw-only.txt).
+- Before drafting, read: career/calibration-who-i-am.md, career/critic-brief.md, career/feedback-log.md, memory/lattice.md, and Dayna's raw writing (career/doc7-raw-only.txt).

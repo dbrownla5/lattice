@@ -1,4 +1,4 @@
-> Approved so far: "Venue Operations" in the title line. Everything else is a working draft.
+> NOT AGREED. An earlier session's proposal; Dayna has approved none of it except "Venue Operations" in the title line. Use it only as a list of possible facts.
 
 # DAYNA BROWN
 Los Angeles, CA | (310) 993-0204 | daynambrown@me.com | linkedin.com/in/daynabrown5

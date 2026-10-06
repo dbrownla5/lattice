@@ -289,3 +289,4 @@ STOP WRITING
 - 2026-10-06T06:49:17 | Your Guide is actually incorrect. We need to stop this path. Whatever you’re using to build is not working. Start this whole project over.
 - 2026-10-06T06:50:06 | I didn’t tell you to deep research roles. I told you a deep research me I want you to literally erase your entire Task search. Whatever the thing is whatever you are using to create the next thing you do it’s incorrect. It’s wrong. Stop it keep all of the files and data whatever learnings you believe that are based on fact and the actual tool calls you were using I want you to delete the actual ladder thing we created itself. The hook starts all of it is bullshit. Stop it.
 - 2026-10-06T07:03:01 | Delete delete
+- 2026-10-06T07:10:09 | Deleted

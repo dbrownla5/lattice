@@ -1,3 +1,5 @@
+> STATUS: NOT APPROVED. Working proposal only. Approved so far: "Venue Operations" in the title line. Locked facts live in critic-brief.md.
+
 # DAYNA BROWN
 Los Angeles, CA | (310) 993-0204 | daynambrown@me.com | linkedin.com/in/daynabrown5
 

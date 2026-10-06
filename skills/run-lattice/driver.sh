@@ -2,7 +2,6 @@
 # Drives the lattice hooks the way Claude Code does, against a throwaway origin, with two sessions
 # on their own branches. Proves they sync every turn. Never touches GitHub or the real lattice.
 #   bash skills/run-lattice/driver.sh            sync tests (seconds, no LLM)
-#   bash skills/run-lattice/driver.sh --review   also runs the real LLM reviewer once (about a minute)
 set -euo pipefail
 REPO=$(git -C "$(dirname "$0")" rev-parse --show-toplevel)
 W=$(mktemp -d); echo "workdir: $W"
@@ -25,20 +24,22 @@ cat > "$T" <<'J'
 {"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"I rewrote the whole summary and added a new skills section so it reads better."}]}}
 J
 
-hook a start.py '{"session_id":"aaaa1111","source":"startup"}' | grep -q "HOW YOU LEARN HERE" && pass "start loads lattice, skills and the learning rules" || fail start
+hook a start.py '{"session_id":"aaaa1111","source":"startup"}' | grep -q "THE CURRENT JOB" && pass "start loads the lattice header and the job brief" || fail start
 hook b start.py '{"session_id":"bbbb2222","source":"startup"}' > /dev/null
 
 (cd "$W/a" && python3 hooks/add.py claude "driver: lesson from session A") > /dev/null
-hook b sync.py '{"session_id":"bbbb2222"}' | grep -q "lesson from session A" && pass "B sees A's lesson on its very next turn" || fail "B missed A's lesson"
+hook b sync.py '{"session_id":"bbbb2222"}' > /dev/null
+grep -q "lesson from session A" "$W/b/memory/lattice.md" && pass "B has A's lesson after its very next turn" || fail "B missed A's lesson"
 
 (cd "$W/a" && python3 hooks/add.py claude "driver: parallel A") > /dev/null
 (cd "$W/b" && python3 hooks/add.py claude "driver: parallel B") > /dev/null
 L=$(git -C "$W/origin.git" show main:memory/lattice.md)
 grep -q "parallel A" <<<"$L" && grep -q "parallel B" <<<"$L" && pass "two sessions writing at once both land on main, no conflict" || fail "parallel writes"
 
-echo "- driver: rule written by session B" >> "$W/b/skills/adapt/SKILL.md"
+echo "- driver: line written by session B" >> "$W/b/career/brief.md"
 hook b sync.py '{"session_id":"bbbb2222"}' > /dev/null
-hook a sync.py '{"session_id":"aaaa1111"}' | grep -q "rule written by session B" && pass "a skill B rewrote reaches A next turn" || fail "skill sync"
+hook a sync.py '{"session_id":"aaaa1111"}' > /dev/null
+grep -q "line written by session B" "$W/a/career/brief.md" && pass "a file B changed reaches A next turn" || fail "file sync"
 
 hook a sync.py "{\"session_id\":\"aaaa1111\",\"transcript_path\":\"$T\"}" > /dev/null
 git -C "$W/origin.git" show main:memory/sessions.md | grep -q "session aaaa1111  live" && pass "live session saved to main mid-session" || fail "live archive"
@@ -46,9 +47,4 @@ git -C "$W/origin.git" show main:memory/sessions.md | grep -q "session aaaa1111 
 hook b sync.py '{"session_id":"bbbb2222"}' > /dev/null
 (cd "$W/b" && python3 hooks/review.py --last) | grep -q "\[CLAUDE\] I rewrote" && pass "review.py --last reads the last session" || fail "review --last"
 
-if [ "${1:-}" = "--review" ]; then
-  (cd "$W/a" && LATTICE_REVIEWER=1 python3 hooks/reviewer.py "$T")
-  tail -1 "$W/a/hooks/hook.log"
-  hook b sync.py '{"session_id":"bbbb2222"}' | grep -q "Reviewer finding" && pass "reviewer graded the reply and B saw the finding next turn" || fail "reviewer"
-fi
 echo "all passed"

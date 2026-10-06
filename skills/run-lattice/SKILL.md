@@ -22,7 +22,7 @@ python3 hooks/review.py --live   # this session so far
 ```
 
 ## How it runs in a real session
-- SessionStart: `start.py` merges main and loads the lattice header, career/brief.md and recent sessions. Nothing else; the dated lattice entries are history, read on demand.
+- SessionStart: `start.py` merges main and loads the lattice header, a pointer to the current work and recent sessions. Nothing else; the dated lattice entries are history, read on demand.
 - Every prompt: `sync.py` saves the live transcript, publishes to main and merges main, silently.
 - The LLM reviewer and the rule skills (adapt, would-dayna-say-this) were removed on 2026-10-06: the reviewer contradicted Dayna and the rules piled up and fought each other.
 - SessionEnd: `end.py` does a final save and publish.

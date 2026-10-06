@@ -35,3 +35,6 @@ Dayna answers in one message, like "1Y 2N 3Y". For each N, offer one alternative
 - Use the voice tools in the session before showing Dayna anything: check lines against Dayna's Idiolect writing profile (it holds the 2026 voice preference). It's a check on Claude's refinement, never a writer that replaces Dayna's words.
 - The calibration is a target, not copy. Before showing a line, scan it for phrases lifted from career/calibration-who-i-am.md and reword them from Dayna's documents. Any number or scale word (eight-figure, $9M) must trace to a document or be flagged as unverified.
 - Before drafting, read: career/calibration-who-i-am.md, career/critic-brief.md, career/feedback-log.md, memory/lattice.md, and Dayna's raw writing (career/doc7-raw-only.txt).
+
+- Before asking which company or what a number was, grep career/ and the raw documents and show the source line with a best read. Never ask a bare which/what question.
+- A clean edit is one of Dayna's own document sentences with filler cut. Do not splice sentences from different places into one line, and do not turn Dayna's chat narration into resume copy while calling it a clean edit; if a line is new wording, say so.

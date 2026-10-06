@@ -23,13 +23,39 @@
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && (python3 hooks/sync.py || python hooks/sync.py)",
+            "shell": "bash",
+            "timeout": 90
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && (python3 hooks/review.py || python hooks/review.py)",
+            "shell": "bash",
+            "timeout": 20
+          }
+        ]
+      }
     ]
   },
   "permissions": {
     "allow": [
       "Bash(python hooks/add.py *)",
       "Bash(python3 hooks/add.py *)",
-      "PowerShell(python hooks/add.py *)"
+      "PowerShell(python hooks/add.py *)",
+      "Bash(python3 hooks/review.py *)",
+      "Bash(python hooks/review.py *)"
     ],
     "deny": [
       "Edit(memory/**)",

@@ -17,13 +17,10 @@ Every line written for Dayna passes all eight checks before Dayna sees it. One "
 7. **Only what was asked?** If this is a fix, only the line Dayna pointed at changed.
 8. **In scope?** It works for Dayna's usual zone (retail leadership across industries) and opens venue operations and music, without tilting to one posting.
 
-## The rubric for Dayna (when Dayna's answer is needed)
-Show numbered lines, each with Y / N:
+## Showing Dayna the work
+Show finished work, whole, the way a reader would see it: a full summary or a full section, not numbered lines. No Y/N series, and no question lists. Dayna reacts however Dayna wants. What Dayna keeps goes in the "Approved" list in the working file and is never rewritten unless Dayna asks. Anything Claude can settle from the documents, it settles itself and states its read.
 
-    1. <line>   Y / N
-    2. <line>   Y / N
-
-Dayna answers in one message, like "1Y 2N 3Y". For each N, offer one alternative, not a menu. Every Y moves into the "Approved" list at the top of the working file and is never rewritten again unless Dayna asks.
+The working file keeps three lists at the top: Approved, Rejected (never comes back), Decisions (stay settled). Never call anything approved unless Dayna said so.
 
 ## Working rules
 - Answer from Dayna's documents first. Dayna's own file labels ("use for contributions and data points", "pull from – dont use as is") are authority. Dates answer questions too.

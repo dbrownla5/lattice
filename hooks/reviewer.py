@@ -54,7 +54,7 @@ Do this:
 2. If every line passes, reply with the single word CLEAN and do nothing else.
 3. For each real fault (at most two, worst first), run:
    python3 hooks/add.py reviewer "Reviewer finding: <rubric check> failed. <what happened in that reply>. Next time: <what to do instead>."
-   Quote marks only around Dayna's exact words from the conversation. Don't invent facts. One or two sentences per part.
+   Refer to Dayna by name, never he or she. Quote marks only around Dayna's exact words from the conversation. Don't invent facts. One or two sentences per part.
 4. If the fault came from a skill in skills/ (a rule that's missing, wrong, or unclear), make the smallest edit to that skill that fixes it. Edit nothing outside skills/.
 5. Finish with one line: what you found and what you changed."""
 

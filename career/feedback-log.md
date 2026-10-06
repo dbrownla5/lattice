@@ -90,3 +90,25 @@ DELETE THE BREAK
 - 2026-10-06T04:55:10 | and where is all the feedback i spent all day giving you going?
 - 2026-10-06T04:55:10 | and fuck idiolect
 - 2026-10-06T04:55:10 | i said new tools new system new skills
+
+## Session d0054619, verbatim
+
+- 2026-10-06T04:58:29 | starting new session
+- 2026-10-06T05:04:23 | We're already off to a rocky start. I never said venue operations in the title. Nothing else is agreed. We've already gotten the fucking... I can't even deal with this at this point with you. I really can't. If this is your way of summarizing to me, then we're off to a really bad start.
+- 2026-10-06T05:06:07 | do i really need to finish that - this is not going well - i am going for walk - i want 10 resumes all written with the information based on my voice chats not parsing of keywords - and the context i gave on the summary  i pasted last session the other ai was capable of writing in minutes
+- 2026-10-06T05:06:30 | language is your biggest failure
+- 2026-10-06T05:14:52 | you are too focused on the latching of one or two things you think are correct instead of the 360 work - i see it the first lines of resume one - you say artists and athletes like i am a newscaster
+- 2026-10-06T05:14:58 | it looses credibility
+- 2026-10-06T05:15:00 | you speak bullshit
+- 2026-10-06T05:15:03 | learn what i do
+- 2026-10-06T05:15:04 | learn it
+- 2026-10-06T05:15:06 | then write
+- 2026-10-06T05:15:17 | otherwise you a bad thesarus
+- 2026-10-06T06:51:03 | I don’t know I can’t work in this environment anymore. You’ve created such a monster. You need to fix it clean it up and move this to something else. I can’t work in this reborn environment. I need this out of this fix it clean it up. It’s a monster it’s spiraling. This is not what I asked for in the original creation of the lattice. This is disaster.
+- 2026-10-06T06:55:18 | But I’m trying to tell you that whatever you’re building actually I was reading what you were pulling into the containers that was good. Keep that what the start and end hook is what’s breaking this whole thing they don’t work for some reason you can’t pull the tools it’s not working so you’re not pulling into the session what you think you are and it’s fucking me up because then every thing I think you’re retaining, you’re literally not getting from each message I sent to the next.
+- 2026-10-06T06:55:36 | There’s four different chats right now. None of them are doing what you think they are.
+- 2026-10-06T06:57:14 | That's not the solution either.
+- 2026-10-06T06:57:23 | you're missing what I'm saying. You're not hearing me.
+- 2026-10-06T06:59:34 | Whatever you were writing was good. I could see what you’re writing in the containers the actual functions you were writing the code whatever you’re writing will not work. You’re gonna tell me to restart the session. You’re gonna tell me to start a new session you’re gonna tell me in about two minutes to do something different you’re gonna go back to pull something in about three minutes you’re not gonna have access to it. You’re gonna fail yourself and then you’re gonna drive me insane because I’m gonna tell you to put something back into the résumé, you’re not gonna be able to conceptualize it you’re not gonna keep a running memory in this. You’re gonna realize your tool calls aren’t working because they never actually landed. You’re hallucinating a tool you’re writing code. You’re not testing it the code doesn’t actually work.
+- 2026-10-06T06:59:58 | All those other chats started from one lattice
+- 2026-10-06T07:02:27 | I don’t care I don’t know you’re speaking fucking I’m so tired of listening to everyone fucking talk about code and hooks. I don’t care. I’m not a coder. I wanna fucking make my résumé and I wanna rewrite it and I wanna get it done. I wanna apply for jobs. I want my voice I want accurate I want it with the data I gave you not data you found or data you wrote you were writing it really well in those fucking five containers get it out of a fucking code loop. Don’t write the word fucking or PY or anything to me for another day. Get me out of this loop.

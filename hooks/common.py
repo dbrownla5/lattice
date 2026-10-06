@@ -179,3 +179,54 @@ def messages(path: Path) -> list:
         if c and not c.startswith("<") and not c.startswith("[Request interrupted"):
             out.append((role, c))
     return out
+
+
+FEEDBACK = ROOT / "career" / "feedback-log.md"
+
+
+def log_dayna_messages(session: str, src: Path) -> int:
+    """Append every message Dayna typed this session (including ones sent mid-turn) to
+    career/feedback-log.md, verbatim, once each. CLAUDE.md loads that file into every session."""
+    import json
+    if not src.is_file():
+        return 0
+    seen_file = STATE / "feedback_seen.json"
+    try:
+        seen = set(json.loads(seen_file.read_text(encoding="utf-8")))
+    except Exception:
+        seen = set()
+    skip = ("<", "[Request interrupted", "Base directory for this skill")
+    new = []
+    for line in src.read_text(encoding="utf-8", errors="replace").splitlines():
+        try:
+            d = json.loads(line)
+        except Exception:
+            continue
+        text = ""
+        if d.get("type") == "user" and not d.get("isMeta"):
+            c = d.get("message", {}).get("content")
+            if isinstance(c, str):
+                text = c
+            elif isinstance(c, list) and not any(x.get("type") == "tool_result" for x in c if isinstance(x, dict)):
+                text = " ".join(x.get("text", "") for x in c if isinstance(x, dict) and x.get("type") == "text")
+        elif d.get("type") == "queue-operation" and d.get("operation") == "enqueue":
+            text = d.get("content") if isinstance(d.get("content"), str) else ""
+        text = text.strip()
+        if not text or text.startswith(skip):
+            continue
+        key = f"{session}|{text}"
+        if key in seen:
+            continue
+        seen.add(key)
+        if len(text) > 2500:
+            text = text[:300].rstrip() + " …[long paste, cut]"
+        new.append((d.get("timestamp", "")[:19], text))
+    if new:
+        body = FEEDBACK.read_text(encoding="utf-8") if FEEDBACK.exists() else ""
+        head = f"## Session {session[:8]}, verbatim"
+        out = "" if head in body else f"\n{head}\n\n"
+        out += "".join(f"- {ts} | {t}\n" for ts, t in new)
+        with open(FEEDBACK, "a", encoding="utf-8") as f:
+            f.write(out)
+        seen_file.write_text(json.dumps(sorted(seen)), encoding="utf-8")
+    return len(new)

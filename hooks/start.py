@@ -1,5 +1,4 @@
-"""SessionStart hook: syncs with main, then puts the lattice and Claude's own skills straight
-into the new session's context. Claude doesn't have to find, fetch, or remember anything."""
+"""SessionStart hook: syncs with main, then loads the lattice header and a pointer to the current work. Nothing else."""
 
 import json
 import sys
@@ -18,14 +17,6 @@ except Exception:
 
 lattice = LATTICE.read_text(encoding="utf-8") if LATTICE.exists() else ""
 header = lattice.split("\n### ")[0].strip()  # how to be with Dayna; the dated entries stay on file as history
-brief_file = ROOT / "career" / "brief.md"
-brief = brief_file.read_text(encoding="utf-8") if brief_file.exists() else ""
-def read(rel):
-    f = ROOT / rel
-    return f.read_text(encoding="utf-8") if f.exists() else ""
-calibration = read("career/calibration-who-i-am.md")  # Dayna asked for this to be kept for memory
-feedback = read("career/feedback-log.md")[-40000:]      # every correction Dayna has given, in Dayna's words
-
 sessions = SESSIONS_INDEX.read_text(encoding="utf-8").splitlines() if SESSIONS_INDEX.exists() else []
 recent = "\n".join(sessions[-5:]) or "(none yet)"
 
@@ -33,17 +24,9 @@ context = f"""=== THE LATTICE (loaded by the start hook) ===
 
 {header}
 
-=== THE CURRENT JOB ===
-
-{brief}
-
-=== HOW DAYNA SHOULD COME ACROSS (Dayna's calibration; the read to land, not copy) ===
-
-{calibration}
-
-=== DAYNA'S FEEDBACK, VERBATIM (newest at the bottom) ===
-
-{feedback}
+=== WORK ===
+The resume is in its own doc: https://claude.ai/code/artifact/985e67e9-8373-4039-9b25-9b6ab5ea3b6e
+Career source files: career/sources/. Old drafts and logs: career/archive/ (history, not rules).
 
 === RECENT SESSIONS ===
 {recent}

@@ -1,4 +1,17 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(python hooks/add.py *)",
+      "Bash(python3 hooks/add.py *)",
+      "PowerShell(python hooks/add.py *)"
+    ],
+    "deny": [
+      "Edit(memory/**)",
+      "Edit(hooks/**)",
+      "Edit(transcripts/**)",
+      "Edit(.claude/**)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
@@ -37,17 +50,7 @@
       }
     ]
   },
-  "permissions": {
-    "allow": [
-      "Bash(python hooks/add.py *)",
-      "Bash(python3 hooks/add.py *)",
-      "PowerShell(python hooks/add.py *)"
-    ],
-    "deny": [
-      "Edit(memory/**)",
-      "Edit(hooks/**)",
-      "Edit(transcripts/**)",
-      "Edit(.claude/**)"
-    ]
+  "enabledPlugins": {
+    "career-navigator@anthropic-plugin-directory": true
   }
 }

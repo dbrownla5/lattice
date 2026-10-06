@@ -12,12 +12,10 @@ One resume, same scope. It has to work for Dayna's usual zone (retail leadership
 - Dayna is in the field (floor, warehouse, plane) and translates that reality for boardrooms and CFOs.
 - At evo Dayna was at the leadership table for the campus and hotel era, not only a regional retail director.
 
-## Approved wording (only these)
-- "Venue Operations" (in the title line, replacing Live Events)
+## Approved wording
+None. Dayna, 2026-10-06: "I never said venue operations in the title. Nothing else is agreed." (Dayna had said "I THINK VENUE OPERATIONS IS STRONGER" than live events; that was a comparison, not an approval.)
 
-Everything else in the draft is unapproved.
-
-## Locked facts (Dayna supplied or confirmed)
+## Facts from Dayna (material, not agreed wording)
 - evo: stagnant $5M flagship; first $10M year in company history in year one (Dayna proved it through a broken time-clock update); $13.9M in year two; +39.9%.
 - evo: started as Seattle Store Manager (flagship, rental/repair, All Together Skatepark) 2020–21; promoted 2021 to lead Snoqualmie mixed-use workspace and co-op rental venture; took on the outlet 2021; ended Senior Regional Retail Director, Pacific Northwest (Dec 2020 – Feb 2023).
 - evo flagship was a venue: retail, rental and service, All Together Skatepark, an in-house art gallery. Concerts, film premieres, art shows, founder investment fundraisers, nationally televised skate competitions, 500–1,000+ attendee events. A renowned chef's restaurant was inside the building but was NOT Dayna's.

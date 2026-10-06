@@ -13,7 +13,7 @@ Venue & Facility Operations · New Buildouts & Openings · Live Events · Multi-
 ## EXPERIENCE
 
 **SVP Worldwide (Singer, Husqvarna Viking, PFAFF)** | Regional Director – West/Central | Apr 2023 – Jun 2025
-- Hired as Area Manager, West Coast; promoted within a year to Regional Director over 14 states, reporting to the President of North America, Retail; one of four executives leading enterprise transformation.
+- Hired as Area Manager, West Coast; promoted within a year to Regional Director over 14 states, one of four executives reporting to the President of North America, Retail.
 - Delivered 32% year-over-year territory growth and a record +45% December; ranked #2 nationally.
 - Led the integration of 50+ Joann partner locations and standardized operations across 134 stores supporting $85M+ through a partnership restructuring.
 - Partnered with Joann to redesign store layouts and infrastructure; authored the California workplace safety and violence-response policy, later adopted nationally.

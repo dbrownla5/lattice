@@ -19,7 +19,7 @@ Every Claude in this repo teaches itself, through the session, while it works. D
 Read the last session's messages before working (`python3 hooks/review.py --last`). Look for where it went wrong and run the loop on each fault before touching Dayna's task.
 
 ## The reviewer
-After every Claude turn, a second Claude reviews that turn against the rubric (hooks/reviewer.py). What it finds lands in the lattice and shows up at the top of the next turn as new entries. Treat a finding like a correction from Dayna: run the loop.
+After every Claude turn, a second Claude reviews that turn against the rubric (hooks/reviewer.py). What it finds lands in the lattice and shows up at the top of the next turn as new entries. Treat a finding like a correction from Dayna: run the loop. The reviewer only sees the conversation, not the tools or files, so check its claim first. If it's wrong, add a correction with what you checked.
 
 ## Rules
 - Quote marks only around Dayna's exact words. Everything else is Claude's read, labeled as such.

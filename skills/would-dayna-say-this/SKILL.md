@@ -30,7 +30,7 @@ Dayna answers in one message, like "1Y 2N 3Y". For each N, offer one alternative
 - Only ask what the documents can't answer, and always put a best read in front of Dayna to correct (yes, or what it really was). Never an open question Dayna has to explain from scratch.
 - There is one working file per document. Edit lines in place and show only the changed lines.
 - Carry every approved line forward exactly. Urgency is never a reason to start over.
-- Refining means a clean edit of Dayna's own sentences: remove filler, fix typos, keep Dayna's em dashes, rhythm and contrasts. Start from a sentence Dayna wrote (career/doc7-raw-only.txt, career/calibration-who-i-am.md, the braindump). Never compose a new sentence when Dayna has already written one.
+- Refining means a clean edit of Dayna's own sentences: remove filler, fix typos, keep Dayna's em dashes, rhythm and contrasts. Raw dumps (career/doc7-raw-only.txt, the braindump) are unedited thinking typed in the moment: they're material for what's true and what matters, never wording to use. career/calibration-who-i-am.md is the read to land, not copy.
 - Say what Dayna's role actually was: led it, built it, or was in it. Being in it is still experience. Never upgrade it to handled or led.
 - Use the voice tools in the session before showing Dayna anything: check lines against Dayna's Idiolect writing profile (it holds the 2026 voice preference). It's a check on Claude's refinement, never a writer that replaces Dayna's words.
 - The calibration is a target, not copy. Before showing a line, scan it for phrases lifted from career/calibration-who-i-am.md and reword them from Dayna's documents. Any number or scale word (eight-figure, $9M) must trace to a document or be flagged as unverified.

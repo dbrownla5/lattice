@@ -38,6 +38,7 @@ Everything else in the draft is unapproved.
 - Invented numbers or claims. Anything Dayna couldn't speak to in an interview.
 - File or section names: source of truth, final, master, voice, style.
 
-## Dayna's raw writing (the current voice, 2026)
+## Dayna's raw dumps (conceptual material, NOT voice or copy)
+Correction 2026-10-06, Dayna: these were "a conceptual brain dump unedited literally me typing without thinking". Use them for facts and what matters, never as wording or as the voice. How Dayna should come across: career/calibration-who-i-am.md.
 - The Oct 2 braindump (scratchpad braindump.txt)
 - Document seven, raw part only (doc7-raw-only.txt). Its first paragraph, and two sentences inside the raw part ("My work holds up whether I am on the warehouse floor... regional labor requirements" and "I move from breakdown to breakthrough..."), are older AI summary lines Dayna was editing over. They are not Dayna's voice.

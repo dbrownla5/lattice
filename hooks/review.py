@@ -28,6 +28,9 @@ def current() -> Path:
     return Path(f.read_text(encoding="utf-8").strip()) if f.exists() else Path("")
 
 
+import signal
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # piping into head shouldn't throw
+
 arg = sys.argv[1] if len(sys.argv) > 1 else ""
 if arg == "--live":
     show(current())

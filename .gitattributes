@@ -1,0 +1,4 @@
+# Append-only records: when two sessions add at once, keep both sides instead of conflicting.
+memory/lattice.md merge=union
+memory/sessions.md merge=union
+career/feedback-log.md merge=union

@@ -30,4 +30,5 @@ Dayna answers in one message, like "1Y 2N 3Y". For each N, offer one alternative
 - Only ask what the documents can't answer, and always put a best read in front of Dayna to correct (yes, or what it really was). Never an open question Dayna has to explain from scratch.
 - There is one working file per document. Edit lines in place and show only the changed lines.
 - Carry every approved line forward exactly. Urgency is never a reason to start over.
+- Use the voice tools in the session before showing Dayna anything: check lines against Dayna's Idiolect writing profile (it holds the 2026 voice preference). It's a check on Claude's refinement, never a writer that replaces Dayna's words.
 - Before drafting, read: career/critic-brief.md, career/feedback-log.md, memory/lattice.md, and Dayna's raw writing (career/doc7-raw-only.txt).
